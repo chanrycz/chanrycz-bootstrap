@@ -1,0 +1,223 @@
+.site-overview {
+    .card {
+        border-color: $theme-divider;
+
+        &:hover {
+            @include box-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important);
+            background: $theme-bg-light;
+
+            .card-icon-holder {
+                background: $theme-white;
+            }
+        }
+    }
+}
+
+/* Docs page */
+.search-form {
+    .search-input {
+        &:focus {
+            border-color: $theme-divider;
+        }
+    }
+
+    .search-btn {
+        color: darken($theme-text-color-secondary, 15%);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: $theme-color-primary;
+        }
+    }
+}
+
+.site-sidebar-toggler {
+    span {
+        background-color: $theme-text-color-primary;
+        @include opacity(0.8);
+    }
+}
+
+.site-sidebar {
+    background: $theme-white;
+    @include box-shadow(1px 0 5px 0 rgba(0, 0, 0, 0.1));
+
+    /* Firefox scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.2) $smoky-white;
+
+    /* Chrome webkit scrollbar */
+    &::-webkit-scrollbar {
+        background-color: $smoky-white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.125);
+    }
+}
+
+.site-nav {
+    .nav-item {
+        &.active .nav-link {
+            color: $theme-color-primary;
+
+            &:before {
+                background-color: $theme-color-primary;
+            }
+
+            .theme-icon-holder {
+                color: #fff;
+                background: $theme-color-primary;
+            }
+        }
+    }
+
+    .nav-link {
+        color: $theme-text-color-secondary;
+
+        &.active {
+            color: $theme-color-primary;
+
+            &:before {
+                background-color: $theme-color-primary;
+            }
+
+            .theme-icon-holder {
+                color: $theme-white;
+                background: $theme-color-primary;
+            }
+        }
+
+        &:before {
+            background-color: $theme-bg-light;
+        }
+    }
+}
+
+.site-article {
+    color: $theme-text-color-secondary;
+
+    strong {
+        color: $theme-text-color-primary;
+    }
+
+    .site-heading:after {
+        background-color: $theme-divider;
+    }
+
+    .site-time {
+        color: darken($theme-text-color-secondary, 10%);
+    }
+
+    .site-section:not(:last-child) {
+        border-bottom-color: $theme-divider;
+    }
+
+    .section-heading {
+        color: $theme-text-color-primary;
+    }
+
+    h2 {
+        color: lighten($theme-text-color-secondary, 10%);
+    }
+
+    h3 {
+        color: lighten($theme-text-color-secondary, 10%);
+    }
+
+    h4 {
+        color: lighten($theme-text-color-secondary, 10%);
+    }
+
+    h5 {
+        color: lighten($theme-text-color-secondary, 10%);
+    }
+
+    h6 {
+        color: lighten($theme-text-color-secondary, 10%);
+    }
+}
+
+.callout-block {
+    border-left: 3px solid $theme-text-color-secondary;
+    background: $smoky-white;
+
+    code {
+        background: $theme-white;
+    }
+
+    &.callout-block-primary {
+        border-color: $theme-color-primary;
+        background: darken($theme-color-primary, 35%);
+
+        .callout-title {
+            color: lighten($theme-color-primary, 15%);
+        }
+
+        a {
+            color: lighten($theme-color-primary, 15%);
+        }
+    }
+
+    &.callout-block-info {
+        border-color: $theme-info-color;
+        background: darken($theme-info-color, 40%);
+
+        .callout-title {
+            color: lighten($theme-info-color, 15%);
+        }
+
+        a {
+            color: lighten($theme-info-color, 15%);
+        }
+    }
+
+    &.callout-block-success {
+        border-color: $theme-success-color;
+        background: darken($theme-success-color, 30%);
+
+        .callout-title {
+            color: lighten($theme-success-color, 15%);
+        }
+
+        a {
+            color: lighten($theme-success-color, 15%);
+        }
+    }
+
+    &.callout-block-warning {
+        border-color: $theme-warning-color;
+        background: darken($theme-warning-color, 35%);
+
+        .callout-title {
+            color: lighten($theme-warning-color, 15%);
+        }
+
+        a {
+            color: lighten($theme-warning-color, 15%);
+        }
+    }
+
+    &.callout-block-danger {
+        border-color: $theme-danger-color;
+        background: darken($theme-danger-color, 40%);
+
+        .callout-title {
+            color: lighten($theme-danger-color, 15%);
+        }
+
+        a {
+            color: lighten($theme-danger-color, 15%);
+        }
+    }
+}
+
+.cta-section {
+    .container {
+        color: #fff;
+
+        h3 {
+            color: #fff;
+        }
+    }
+}

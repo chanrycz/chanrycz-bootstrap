@@ -1,0 +1,160 @@
+/* ============= Base ============= */
+
+/*********** Theme Generic **********/
+.d-light {
+    display: none !important;
+}
+
+.d-dark {
+    display: unset !important;
+}
+
+.g-recaptcha iframe,
+.cf-turnstile iframe {
+    -webkit-filter: invert(88%) hue-rotate(180deg);
+    filter: invert(88%) hue-rotate(180deg);
+}
+
+// body {
+//   color: $theme-text-color-secondary;
+// }
+
+img:not([src*=".svg"]) {
+    -webkit-filter: brightness(80%) contrast(120%);
+    filter: brightness(80%) contrast(120%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $theme-text-color-primary;
+}
+
+code {
+    background: $theme-bg-light;
+    color: $theme-text-color-primary;
+}
+
+// .table-bordered th,
+// .table-bordered td {
+//   border-color: $theme-divider;
+// }
+
+// .table th,
+// .table td {
+//   border-color: $theme-divider;
+// }
+
+// .table thead th {
+//   border-color: $theme-divider;
+// }
+
+// .table-striped tbody tr:nth-of-type(odd) {
+//   background-color: $smoky-white;
+// }
+
+// .table-dark th,
+// .table-dark td,
+// .table-dark thead th {
+//   border-color: lighten($theme-text-color-primary, 20%);
+// }
+
+// .popover {
+//   border-color: lighten($theme-bg-light, 5%);
+// }
+// .bs-popover-left > .arrow::before,
+// .bs-popover-auto[x-placement^="left"] > .arrow::before {
+//   border-left-color: lighten($theme-bg-light, 5%);
+// }
+// .bs-popover-right > .arrow::before,
+// .bs-popover-auto[x-placement^="right"] > .arrow::before {
+//   border-right-color: lighten($theme-bg-light, 5%);
+// }
+// .bs-popover-top > .arrow::before,
+// .bs-popover-auto[x-placement^="top"] > .arrow::before {
+//   border-top-color: lighten($theme-bg-light, 5%);
+// }
+// .bs-popover-bottom > .arrow::before,
+// .bs-popover-auto[x-placement^="bottom"] > .arrow::before {
+//   border-bottom-color: lighten($theme-bg-light, 5%);
+// }
+
+// .form-control {
+//   border-color: lighten($theme-bg-light, 5%);
+//   &:focus {
+//     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+//   }
+// }
+
+.theme-icon-holder {
+    background: $theme-bg-light;
+    color: $theme-color-primary;
+}
+
+.theme-bg-light {
+    background: $theme-bg-light;
+}
+
+.theme-bg-dark {
+    background: $theme-bg-dark;
+}
+
+.theme-bg-shapes-right {
+    &:before {
+        background: rgba(256, 256, 256, 0.1);
+    }
+
+    &:after {
+        background: rgba(256, 256, 256, 0.15);
+    }
+}
+
+.theme-bg-shapes-left {
+    &:before {
+        background: rgba(256, 256, 256, 0.1);
+    }
+
+    &:after {
+        background: rgba(256, 256, 256, 0.15);
+    }
+}
+
+.sl-overlay {
+    background: #000;
+}
+
+.sl-close {
+    color: #fff;
+}
+
+/*********** Theme Utilities **********/
+/* Header */
+.site-logo .navbar-brand .brand-logo {
+    color: $theme-text-color-primary;
+}
+
+.social-list {
+    li {
+        background: $theme-bg-light;
+        a {
+            color: darken($theme-color-primary, 10%);
+            &:hover {
+                color: $theme-color-primary;
+            }
+        }
+    }
+}
+
+.header {
+    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.1));
+    background: $theme-white;
+    border-bottom-color: $theme-border-color;
+}
+
+/* Footer */
+.footer {
+    border-top-color: $theme-border-color;
+}

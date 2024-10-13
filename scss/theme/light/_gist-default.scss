@@ -1,0 +1,94 @@
+body {
+    .gist {
+        .m-1,
+        .m-2,
+        .m-3,
+        .m-4,
+        .m-5,
+        .my-1,
+        .my-2,
+        .my-3,
+        .my-4,
+        .my-5,
+        .mx-1,
+        .mx-2,
+        .mx-3,
+        .mx-4,
+        .mx-5,
+        .ms-1,
+        .ms-2,
+        .ms-3,
+        .ms-4,
+        .ms-5,
+        .me-1,
+        .me-2,
+        .me-3,
+        .me-4,
+        .me-5,
+        .mt-1,
+        .mt-2,
+        .mt-3,
+        .mt-4,
+        .mt-5,
+        .mb-1,
+        .mb-2,
+        .mb-3,
+        .mb-4,
+        .mb-5 {
+            margin: 0 !important;
+        }
+
+        .p-1,
+        .p-2,
+        .p-3,
+        .p-4,
+        .p-5,
+        .py-1,
+        .py-2,
+        .py-3,
+        .py-4,
+        .py-5,
+        .px-1,
+        .px-2,
+        .px-3,
+        .px-4,
+        .px-5,
+        .ps-1,
+        .ps-2,
+        .ps-3,
+        .ps-4,
+        .ps-5,
+        .pe-1,
+        .pe-2,
+        .pe-3,
+        .pe-4,
+        .pe-5,
+        .pt-1,
+        .pt-2,
+        .pt-3,
+        .pt-4,
+        .pt-5,
+        .pb-1,
+        .pb-2,
+        .pb-3,
+        .pb-4,
+        .pb-5 {
+            padding: 0 !important;
+        }
+    }
+
+    .site-code-block.gist-no-footer .gist {
+        .gist-file {
+            border-bottom-color: #ddd;
+        }
+
+        .gist-data {
+            border-radius: 6px;
+            border-bottom: none;
+        }
+
+        .gist-meta {
+            display: none;
+        }
+    }
+}

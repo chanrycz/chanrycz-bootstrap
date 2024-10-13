@@ -1,0 +1,88 @@
+/* ============= Theme Mixins ============= */
+@mixin opacity($opacity: 0.5) {
+    -webkit-opacity: $opacity;
+    -moz-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin scale($factor) {
+    -webkit-transform: scale($factor);
+    -moz-transform: scale($factor);
+    -ms-transform: scale($factor);
+    -o-transform: scale($factor);
+}
+
+@mixin background-size($string: contain) {
+    background-size: $string;
+}
+
+@mixin reset-box-sizing($size: content-box) {
+    &,
+    *,
+    *:before,
+    *:after {
+        box-sizing: $size;
+    }
+}
+
+@mixin placeholder($color: #999) {
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: $color;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: $color;
+    }
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+    transition: $property $duration $easing;
+    -webkit-transition: $property $duration $easing;
+    -moz-transition: $property $duration $easing;
+}
+
+@mixin box-shadow($shaodw) {
+    box-shadow: $shaodw;
+}
+
+// generic transform
+@mixin transform($transforms) {
+    transform: $transforms;
+}
+// rotate
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+// translate
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+// skew
+@mixin skew($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin($origin) {
+    moz-transform-origin: $origin;
+    transform-origin: $origin;
+}
