@@ -14160,7 +14160,7 @@ body .site-code-block.gist-no-footer .gist .gist-meta {
   display: unset !important;
 }
 [data-bs-theme=dark] .g-recaptcha iframe,
-[data-bs-theme=dark] .cf-turnstile iframe {
+[data-bs-theme=dark] .cf-turnstile {
   filter: invert(88%) hue-rotate(180deg);
 }
 [data-bs-theme=dark] img:not([src*=".svg"]) {
