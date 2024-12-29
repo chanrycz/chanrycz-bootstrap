@@ -45,7 +45,7 @@
     "import/order": "error",
     "indent": [
       "error",
-      2,
+      4,
       {
         "MemberExpression": "off",
         "SwitchCase": 1

@@ -132,23 +132,9 @@
     },
     "jspm": {
         "registry": "npm",
-        "main": "js/bootstrap",
         "directories": {
             "lib": "dist"
         },
-        "bugs": {
-            "url": "https://github.com/twbs/bootstrap/issues"
-        },
-        "funding": [
-            {
-                "type": "github",
-                "url": "https://github.com/sponsors/twbs"
-            },
-            {
-                "type": "opencollective",
-                "url": "https://opencollective.com/bootstrap"
-            }
-        ],
         "main": "dist/js/bootstrap.js",
         "module": "dist/js/bootstrap.esm.js",
         "sass": "scss/theme.scss",
@@ -277,3 +263,4 @@
             }
         }
     }
+}
