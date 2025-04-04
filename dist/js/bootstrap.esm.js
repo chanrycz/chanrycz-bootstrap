@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap v5.3.3 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) & Ryan C. (https://chanrycz.com), Ryan C.
+  * Bootstrap v5.3.4 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
+  * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors), Ryan C.
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 import * as Popper from '@popperjs/core';
@@ -643,7 +643,7 @@ class Config {
  * Constants
  */
 
-const VERSION = '5.3.3';
+const VERSION = '5.3.4';
 
 /**
  * Class definition
