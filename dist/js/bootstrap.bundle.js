@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap v5.3.3 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) & Ryan C. (https://chanrycz.com), Ryan C.
+  * Bootstrap v5.3.4 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
+  * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors), Ryan C.
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -647,7 +647,7 @@
    * Constants
    */
 
-  const VERSION = '5.3.3';
+  const VERSION = '5.3.4';
 
   /**
    * Class definition
@@ -2666,7 +2666,6 @@
     var popperOffsets = computeOffsets({
       reference: referenceClientRect,
       element: popperRect,
-      strategy: 'absolute',
       placement: placement
     });
     var popperClientRect = rectToClientRect(Object.assign({}, popperRect, popperOffsets));
@@ -2994,7 +2993,6 @@
     state.modifiersData[name] = computeOffsets({
       reference: state.rects.reference,
       element: state.rects.popper,
-      strategy: 'absolute',
       placement: state.placement
     });
   } // eslint-disable-next-line import/no-unused-modules
