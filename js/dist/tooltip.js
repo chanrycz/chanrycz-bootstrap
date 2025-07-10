@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap tooltip.js v5.3.4 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
+  * Bootstrap tooltip.js v5.3.7 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
   * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors), Ryan C.
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -395,6 +395,7 @@
         if (trigger === 'click') {
           EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK), this._config.selector, event => {
             const context = this._initializeOnDelegatedTarget(event);
+            context._activeTrigger[TRIGGER_CLICK] = !(context._isShown() && context._activeTrigger[TRIGGER_CLICK]);
             context.toggle();
           });
         } else if (trigger !== TRIGGER_MANUAL) {

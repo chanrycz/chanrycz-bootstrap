@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap backdrop.js v5.3.4 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
+  * Bootstrap backdrop.js v5.3.7 (https://chanrycz.com/assets/css/theme.css) - CHANRYCZ (https://chanrycz.com)
   * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors), Ryan C.
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
