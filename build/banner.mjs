@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
 function getBanner(pluginFilename) {
     return `/*!
   * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ""} v${pkg.version} (${pkg.homepage}) - CHANRYCZ (https://chanrycz.com)
-  * Copyright 2011-${year} ${pkg.author}, Ryan C.
+  * Copyright 2011-${year} ${pkg.author}
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */`;
 }
