@@ -11,6 +11,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sh from "shelljs";
+import { format } from "prettier";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -37,7 +38,7 @@ sh.config.fatal = true;
 
 if (!sh.test("-d", rootDocsDir)) {
     throw new Error(
-        `The "${rootDocsDir}" folder does not exist, did you forget building the docs?`
+        `The "${rootDocsDir}" folder does not exist, did you forget building the docs?`,
     );
 }
 
@@ -62,7 +63,7 @@ for (const file of cssFiles) {
     sh.cp(
         "-f",
         `${docsDir}/dist/css/${file}`,
-        `${distFolder}/assets/dist/css/`
+        `${distFolder}/assets/dist/css/`,
     );
 }
 
@@ -74,7 +75,7 @@ for (const file of imgFiles) {
     sh.cp(
         "-f",
         `${docsDir}/assets/brand/${file}`,
-        `${distFolder}/assets/brand/`
+        `${distFolder}/assets/brand/`,
     );
 }
 
@@ -94,7 +95,7 @@ for (const file of sh.find(`${distFolder}/**/*.html`)) {
         .replace(/(<link href="\.\.\/[^"]*"[^>]*) integrity="[^"]*"/g, "$1")
         .replace(
             /<link[^>]*href="\.\.\/assets\/img\/favicons\/[^"]*"[^>]*>/g,
-            ""
+            "",
         )
         .replace(/(<script src="\.\.\/[^"]*"[^>]*) integrity="[^"]*"/g, "$1");
     new sh.ShellString(fileContents).to(file);
