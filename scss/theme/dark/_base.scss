@@ -15,9 +15,9 @@
     filter: invert(88%) hue-rotate(180deg);
 }
 
-// body {
-//   color: $theme-text-color-secondary;
-// }
+body {
+    color: darken($theme-text-color-secondary, 20%);
+}
 
 img:not([src*=".svg"]) {
     -webkit-filter: brightness(80%) contrast(120%);
@@ -91,7 +91,7 @@ code {
 
 .theme-icon-holder {
     background: $theme-bg-light;
-    color: $theme-color-primary;
+    color: lighten($theme-color-primary, 15%);
 }
 
 .theme-bg-light {
@@ -140,7 +140,7 @@ code {
     li {
         background: $theme-bg-light;
         a {
-            color: darken($theme-color-primary, 10%);
+            color: lighten($theme-color-primary, 10%);
             &:hover {
                 color: $theme-color-primary;
             }
@@ -152,6 +152,18 @@ code {
     @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.1));
     background: $theme-white;
     border-bottom-color: $theme-border-color;
+
+    .nav-links {
+        .navbar-button {
+            color: $theme-text-color-secondary;
+
+            &:hover,
+            &.active {
+                border-bottom-color: $link-color;
+                color: $link-color;
+            }
+        }
+    }
 }
 
 /* Footer */

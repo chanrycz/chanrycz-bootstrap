@@ -3,7 +3,7 @@
 
 // *************************** Theme Colours ****************************
 // Define theme colour scheme
-$theme-color-primary: #007bff;
+$theme-color-primary: #0071eb;
 
 $theme-text-color-primary: #222222;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 25%);
@@ -45,13 +45,33 @@ $gray-900: $theme-text-color-primary;
 
 // Override BS5 sass color
 $primary: $theme-color-primary;
-// $secondary: $theme-text-color-secondary;
+$secondary: $theme-text-color-secondary;
 $success: $theme-success-color;
 $danger: $theme-danger-color;
 $warning: $theme-warning-color;
 $info: $theme-info-color;
 
 $dark: lighten($gray-900, 7.5%);
+
+$font-family-sans-serif:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+$font-family-monospace:
+    "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 
 // *************************** Config Overrides *****************************
 
@@ -121,7 +141,7 @@ $enable-negative-margins: true;
 // *************************** Dark Theme ****************************
 $color-mode-type: "data";
 @include color-mode(dark) {
-    $theme-color-primary: #007bff;
+    $theme-color-primary: #1b89ff;
 
     $theme-text-color-primary: $white;
     $theme-text-color-secondary: darken($theme-text-color-primary, 25%);
@@ -137,12 +157,10 @@ $color-mode-type: "data";
 
     $theme-divider: $gray-600;
 
-    $theme-color-new: #487ab0;
-    $theme-error: #ec575b;
+    // $theme-color-new: #487ab0;
+    // $theme-error: #ec575b;
 
     $smoky-white: $gray-800;
-
-    $single-col-max: 800px;
 
     // $theme-success-color: #5cb377;
     // $theme-warning-color: #eebf41;

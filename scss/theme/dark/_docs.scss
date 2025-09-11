@@ -62,12 +62,16 @@
             color: $theme-color-primary;
 
             &:before {
-                background-color: $theme-color-primary;
+                background-color: darken($theme-color-primary, 10%);
             }
 
             .theme-icon-holder {
                 color: #fff;
-                background: $theme-color-primary;
+                background: darken($theme-color-primary, 10%);
+
+                &:hover {
+                    background: darken($theme-color-primary, 15%);
+                }
             }
         }
     }
@@ -79,12 +83,16 @@
             color: $theme-color-primary;
 
             &:before {
-                background-color: $theme-color-primary;
+                background-color: darken($theme-color-primary, 10%);
             }
 
             .theme-icon-holder {
-                color: $theme-white;
-                background: $theme-color-primary;
+                color: #fff;
+                background: darken($theme-color-primary, 10%);
+
+                &:hover {
+                    background: darken($theme-color-primary, 15%);
+                }
             }
         }
 

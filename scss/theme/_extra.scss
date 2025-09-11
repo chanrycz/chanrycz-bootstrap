@@ -7,7 +7,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Thin.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -15,7 +14,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-ThinItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -23,7 +21,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-ExtraLight.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -31,7 +28,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-ExtraLightItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -39,7 +35,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Light.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -47,7 +42,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-LightItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -55,7 +49,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Regular.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -63,7 +56,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-RegularItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -71,7 +63,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Medium.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -79,7 +70,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-MediumItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -87,7 +77,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-SemiBold.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -95,7 +84,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-SemiBoldItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -103,7 +91,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Bold.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -111,7 +98,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-BoldItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -119,7 +105,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-ExtraBold.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -127,7 +112,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-ExtraBoldItalic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: normal;
@@ -135,7 +119,6 @@
     font-display: swap;
     src: url("../fonts/Metropolis-Black.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Metropolis";
     font-style: italic;
@@ -160,7 +143,6 @@
     font-display: swap;
     src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -414,59 +396,41 @@
     src: url("../fonts/InterDisplay-BlackItalic.woff2") format("woff2");
 }
 
-* {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    -webkit-text-size-adjust: none !important;
-    -moz-text-size-adjust: none !important;
-    -ms-text-size-adjust: none !important;
-    text-size-adjust: none !important;
+/* Fira Code - Monospace */
+
+@font-face {
+    font-family: "Fira Code VF";
+    src: url("../fonts/FiraCode-VF.woff2") format("woff2-variations");
+    font-weight: 300 700;
+    font-style: normal;
 }
-
-dl {
-    -moz-column-break-inside: auto;
-    break-inside: auto;
-
-    dt,
-    dd {
-        -moz-column-break-after: auto;
-        break-after: auto;
-        -moz-column-break-before: auto;
-        break-before: auto;
-    }
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/FiraCode-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
 }
-
-ol,
-ul {
-    -moz-column-break-inside: auto;
-    break-inside: auto;
-
-    li {
-        -moz-column-break-after: auto;
-        break-after: auto;
-        -moz-column-break-before: auto;
-        break-before: auto;
-    }
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/FiraCode-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
-
-:target {
-    scroll-margin-top: 164px; // 144px
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/FiraCode-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
 }
-
-@media (min-width: 278px) {
-    :target {
-        scroll-margin-top: 132px; // 112px
-    }
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/FiraCode-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
 }
-
-@media (min-width: 350px) {
-    :target {
-        scroll-margin-top: 100px; // 80px
-    }
-}
-
-@media (min-width: 576px) {
-    :target {
-        scroll-margin-top: 84px; // 64px
-    }
+@font-face {
+    font-family: "Fira Code";
+    src: url("../fonts/FiraCode-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
