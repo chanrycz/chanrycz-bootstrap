@@ -97,12 +97,6 @@
     }
 }
 
-@media (max-width: 574.98px) {
-    body {
-        padding-top: calc(81px + var(--#{$prefix}header-offset, 0px));
-    }
-}
-
 @media (max-width: 449.98px) {
     .site-branding .nav-spacer {
         display: none;
@@ -110,9 +104,6 @@
 }
 
 @media (max-width: 349.98px) {
-    body {
-        padding-top: calc(113px + var(--#{$prefix}header-offset, 0px));
-    }
     .site-branding {
         justify-content: safe center !important;
 

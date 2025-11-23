@@ -39,6 +39,30 @@ body {
     padding-top: calc(65px + var(--#{$prefix}header-offset, 0px));
 }
 
+:target {
+    scroll-margin-top: calc(65px + var(--#{$prefix}header-offset, 0px));
+}
+
+@media (max-width: 574.98px) {
+    body {
+        padding-top: calc(81px + var(--#{$prefix}header-offset, 0px));
+    }
+
+    :target {
+        scroll-margin-top: calc(81px + var(--#{$prefix}header-offset, 0px));
+    }
+}
+
+@media (max-width: 349.98px) {
+    body {
+        padding-top: calc(113px + var(--#{$prefix}header-offset, 0px));
+    }
+
+    :target {
+        scroll-margin-top: calc(113px + var(--#{$prefix}header-offset, 0px));
+    }
+}
+
 @supports (font-variation-settings: normal) {
     body {
         font-family: "InterVariable", $font-family-base;
